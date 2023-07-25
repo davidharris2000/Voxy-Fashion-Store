@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div id="side_panel_container">
+    <div class="sidepanel" id="side-panel">
+      <a class="sidePanelLinks" id="closebtn" href="#" onclick="closeSlidingBar()">&times;</a>
+      <a class="sidePanelLinks" href="#">MEN</a>
+      <a class="sidePanelLinks" href="#">WOMEN</a>
+      <a class="sidePanelLinks" href="#">ACCESORIES</a>
+      <a class="sidePanelLinks" href="#">COLLECTIONS</a>
+      <a class="sidePanelLinks" href="#">GIFTS</a>
+    </div>
+  </div>
+
+  <div id="search_bar_container">
+    <a href="" class="search_bar_go_back" onclick="closeSearchBar()"><i id="search_bar_go_back"
+        class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
+    <div id="search_bar">
+      <form action="">
+        <input type="text" placeholder="Search..." class="text" id="input_bar" name="search_item">
+        <button class="close_btn" type="reset">
+          <i class="fa-solid fa-x fa-lg" style="color: #000000;"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="login_container" id="login_container">
+    <div class="login_inner_container">
+      <a href="" class="login_bar_go_back" onclick="closeLoginPage()">
+        <i id="search_bar_go_back" class="fa-solid fa-arrow-left" style="color: #000000;"></i>
+      </a>
+      <div class="imgcontainer">
+        <i class="fa-solid fa-user fa-2xl" style="color: rgb(0, 0, 0);"></i>
+      </div>
+      <form action="">
+        <div class="form_container">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Username" name="username" required>
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" name="password" required>
+          <button class="login_button" type="submit">Login</button>
+          <div class="forget_password">Forgot <a href="#">password?</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div id="cart_container">
+    <div id="cart_go_back">
+      <a href="" class="cart_go_back" onclick="closeCart()">
+        <i id="search_bar_go_back" class="fa-solid fa-arrow-left" style="color: #000000;"></i>
+      </a>
+    </div>
+    <img class="cart_img" src="assets/empty_bag.svg" alt="">
+    <div class="empty_cart_text">Your bag is empty</div>
+  </div>
+
+
+
+
+
+  <!-- HOME PAGE -->
+
+
+
+  <header>
+    <div class="header">
+      <div class="ham_icon">
+        <a href="#" class="ham" onclick="slidingSideBar()"> <i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="logo">
+        <img src="assets/brand_logo.png" alt="" id="logo_img">
+      </div>
+      <div class="search_icon">
+        <a href="" onclick="slidingSearchBar()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="profile_icon">
+        <a href="" onclick="slidingLoginPage()"> <i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="cart_icon">
+        <a href="" onclick="slidingCart()"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="hero"><img class="hero_img" src="https://ik.imagekit.io/fgiv6qmsq/hero.png?updatedAt=1690003344475"
+        alt=""></div>
+
+
+
+    <div class="men_and_women">
+      <div class="men_women_divs">
+        <img src="https://ik.imagekit.io/fgiv6qmsq/men.jpg?updatedAt=1689136920268" />
+        <button>SHOP NOW</button>
+      </div>
+      <div class="men_women_divs">
+        <img src="https://ik.imagekit.io/fgiv6qmsq/women.jpg?updatedAt=1689136920479" />
+        <button>SHOP NOW</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+      <div class="column">
+
+        <div class="col_heading_div">
+          <h2>Choose a wear</h2>
+        </div>
+
+        <div class="image-container">
+          <img src="https://ik.imagekit.io/fgiv6qmsq/jacket.jpg?updatedAt=1689302666120" class="card-img" alt="" />
+          <div class="overlay">
+            <a href="#jackets"><button class="img-button">View Products</button></a>
+          </div>
+        </div>
+        <div class="col_text_div">
+          <h2>JACKETS</h2>
+        </div>
+
+        <div class="image-container">
+          <img src="https://ik.imagekit.io/fgiv6qmsq/men_sportwear.jpg?updatedAt=1689302465499" class="card-img"
+            alt="" />
+          <div class="overlay">
+            <a href="#sportwear"><button class="img-button">View Products</button></a>
+          </div>
+        </div>
+        <div class="col_text_div">
+          <h2>SPORTS</h2>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+
+        <div class="image-container">
+          <img src="https://ik.imagekit.io/fgiv6qmsq/men_tshirt.jpg?updatedAt=1689302465483" class="card-img" alt="" />
+          <div class="overlay">
+            <a href="#tshirt"><button class="img-button">View Products</button></a>
+          </div>
+        </div>
+        <div class="col_text_div">
+          <h2>TEES</h2>
+        </div>
+
+
+
+        <div class="image-container">
+          <img src="https://ik.imagekit.io/fgiv6qmsq/girl-gymwear.jpg?updatedAt=1689302465555" class="card-img"
+            alt="" />
+          <div class="overlay">
+            <a href="#denim"><button class="img-button">View Products</button></a>
+          </div>
+        </div>
+        <div class="col_text_div">
+          <h2>DENIM</h2>
+        </div>
+
+
+
+        <div class="image-container">
+          <img src="https://ik.imagekit.io/fgiv6qmsq/winter_wear.jpg?updatedAt=1690009311006" class="card-img" alt="" />
+          <div class="overlay">
+            <a href="#winterwear"><button class="img-button">View Products</button></a>
+          </div>
+        </div>
+        <div class="col_text_div">
+          <h2>WINTERWEAR</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer_row">
+      <div class="footer_column_1">
+        <h3 class="footer_column_heading" class="footer_column_1_heading">ABOUT THE SHOP</h3>
+
+        <p>
+          The Finnest edit in Luxury Clothes for your wardrobe filled with style.
+        </p>
+        <div class="social">
+        </div>
+      </div>
+
+      <div class="footer_column_2">
+        <h3 class="footer_column_heading">SUPPORT</h3 class="footer_column_1_heading">
+        <ul>
+          <li>
+            <a href="#faq">F.A.Q</a>
+          </li>
+          <li>
+            <a href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li>
+            <a href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li>
+            <a href="#support">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_column_3">
+        <h3 class="footer_column_heading">HELP</h3 class="footer_column_1_heading">
+        <ul>
+          <li>
+            <a href="#care-instructions">Care Instructions</a>
+          </li>
+          <li>
+            <a href="#privacy-policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#international-shipping-policy">International Shipping Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column_4">
+        <h3 class="footer_column_heading">Newsletter</h3 class="footer_column_1_heading">
+        <div class="news_letter_div">
+          <input type="email" placeholder="Your email..." />
+          <button class="news_letter">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; 2023 davidharris</p>
+    </div>
+    </div>
+  </footer>
+
+
+
+  <script defer src="index.js"></script>
+</body>
+
+</html>
