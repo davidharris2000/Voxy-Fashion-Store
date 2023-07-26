@@ -513,16 +513,16 @@ footer {
 }
 
 input {
-  font-size: 0.7rem;
-  padding: 0.3rem;
+  font-size: 1.3rem;
+  padding: 0.4rem;
   border-radius: 5px;
   margin-bottom: 5px;
   outline: none;
 
 }
 .news_letter {
-  font-size: 0.7rem;
-  padding: 0.3rem;
+  font-size: 1.3rem;
+  padding: 0.4rem;
   border: none;
   border-radius: 0.1rem;
   background-color: #c70505;
